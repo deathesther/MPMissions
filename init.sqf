@@ -117,7 +117,7 @@ if (!isDedicated) then {
 [] execVM "custom\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "custom\admintools\Activate.sqf";
 [] execVM "custom\Auto_Refuel\kh_actions.sqf";
-[] execVM "custom\debug\addmarkers.sqf";
-[] execVM "custom\debug\addmarkers75.sqf";
+[] execVM "debug\addmarkers.sqf";
+[] execVM "debug\addmarkers75.sqf";
  sleep 1; _fast_rope = [] execVM "custom\Fast_Rope\BTC_fast_roping_init.sqf";
  

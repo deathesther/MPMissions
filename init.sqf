@@ -46,7 +46,7 @@ DynamicVehicleDamageLow = 30; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",5,"sample_loot_event"]];
-dayz_fullMoonNights = true;
+dayz_fullMoonNights = false;
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "custom\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
@@ -113,10 +113,12 @@ if (!isDedicated) then {
 	//Lights
 	//[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
+
 #include "\z\addons\dayz_code\system\REsec.sqf"
-[] execVM "custom\R3F_ARTY_AND_LOG\init.sqf";
-[] execVM "custom\admintools\Activate.sqf";
-[] execVM "custom\Auto_Refuel\kh_actions.sqf";
+
+[] execVM "R3F_ARTY_AND_LOG\init.sqf";
+[] execVM "admintools\Activate.sqf";
+[] execVM "custom\Various_Scripts\kh_actions.sqf";
 [] execVM "debug\addmarkers.sqf";
 [] execVM "debug\addmarkers75.sqf";
  sleep 1; _fast_rope = [] execVM "custom\Fast_Rope\BTC_fast_roping_init.sqf";

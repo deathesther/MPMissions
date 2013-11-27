@@ -152,9 +152,9 @@ class DayZ_loadingScreen
 	};
 };
 
-#include "custom\R3F_ARTY_AND_LOG\desc_include.h"
+#include "R3F_ARTY_AND_LOG\desc_include.h"
 
 class RscTitles
 {
-	#include "custom\R3F_ARTY_AND_LOG\desc_rsct_include.h"
+	#include "R3F_ARTY_AND_LOG\desc_rsct_include.h"
 };

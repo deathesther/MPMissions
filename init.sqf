@@ -15,7 +15,7 @@ dayz_previousID = 0;
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
-enableRadio false;
+enableRadio true;
 
 // DayZ Epoch config
 DZE_vehicleAmmo = 1;
@@ -37,6 +37,9 @@ DefaultBackpackWeapon = "";
 OldHeliCrash = false;
 MaxAmmoBoxes = 20;
 MaxMineVeins = 100;
+
+setViewDistance 10000;
+setTerrainGrid 12.5;
 
 dayz_paraSpawn = false;
 
@@ -116,10 +119,23 @@ if (!isDedicated) then {
 
 #include "\z\addons\dayz_code\system\REsec.sqf"
 
+///////////////////// COLOUR EFFECTS - OFF BY DEFAULT //////////////////////////////
+//[] execVM "custom\EFFECTS\clear contrast.sqf";
+[] execVM "custom\EFFECTS\wasteland.sqf";
+//[] execVM "custom\EFFECTS\summer colours.sqf";
+//[] execVM "custom\EFFECTS\photo effect.sqf";
+//[] execVM "custom\EFFECTS\warzone effect.sqf";
+//[] execVM "custom\EFFECTS\Snow Storm.sqf";
+///////////////////// NIGHT FOG - USE WITH CAUTION HEAVY ON FPS ///////////////////// 
+[] execVM "custom\EFFECTS\ground_fog.sqf";
+/////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
+/////////////////////ADMIN TOOLS/////////////////////////////////////////////////////
 [] execVM "admintools\Activate.sqf";
-[] execVM "custom\Various_Scripts\kh_actions.sqf";
+///////////////////// AUTO REFUEL ///////////////////////////////////////////////////
+if (!isDedicated) then {[] execVM "custom\Various_Scripts\kh_actions.sqf"};
+//////////////////Mission markers////////////////////////////////////////////////////
 [] execVM "debug\addmarkers.sqf";
 [] execVM "debug\addmarkers75.sqf";
+//////////////////////Fast Rope//////////////////////////////////////////////////////
  sleep 1; _fast_rope = [] execVM "custom\Fast_Rope\BTC_fast_roping_init.sqf";
- 

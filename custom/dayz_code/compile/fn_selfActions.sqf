@@ -11,25 +11,28 @@ if (TradeInprogress) exitWith {}; // Do not allow if any script is running.
 _vehicle = vehicle player;
 _isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
+_hasScrap = "PartGeneric" in magazines player;
+_hasEngine = "PartEngine" in magazines player;
+_hasRotor = "PartVRotor" in magazines player;
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf and !r_player_unconscious and !_onLadder);
-// ---------------------------------------Krixes Self Bloodbag Start------------------------------------
-    _mags = magazines player;
-
-    // Krixes Self Bloodbag
-    if ("ItemBloodbag" in _mags) then {
-        hasBagItem = true;
-    } else { hasBagItem = false;};
-    if((speed player <= 1) && hasBagItem && _canDo) then {
-        if (s_player_selfBloodbag < 0) then {
-            s_player_selfBloodbag = player addaction[("<t color=""#c70000"">" + ("Self Bloodbag") +"</t>"),"custom\Various_Scripts\player_selfbloodbag.sqf","",5,false,true,"", ""];
-        };
-    } else {
-        player removeAction s_player_selfBloodbag;
-        s_player_selfBloodbag = -1;
-    };
-// ---------------------------------------Krixes Self Bloodbag End------------------------------------
+// ------------------------------------------------------------------------Krixes Self Bloodbag Start------------------------------------------------------------------------
+	_mags = magazines player;
+	
+	// Krixes Self Bloodbag
+	if ("ItemBloodbag" in _mags) then {
+		hasBagItem = true;
+	} else { hasBagItem = false;};
+	if((speed player <= 1) && hasBagItem && _canDo) then {
+		if (s_player_selfBloodbag < 0) then {
+			s_player_selfBloodbag = player addaction[("<t color=""#c70000"">" + ("Self Bloodbag") +"</t>"),"custom\Various_Scripts\player_selfbloodbag.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_selfBloodbag;
+		s_player_selfBloodbag = -1;
+	};
+// ------------------------------------------------------------------------Krixes Self Bloodbag End------------------------------------------------------------------------
 _nearLight = 	nearestObject [player,"LitObject"];
 _canPickLight = false;
 if (!isNull _nearLight) then {
@@ -675,7 +678,7 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 		s_player_parts_crtl = -1;
 	};
 
-	
+
 	if(dayz_tameDogs) then {
 		
 		//Dog
@@ -816,6 +819,18 @@ if (!isNull cursorTarget and !_inVehicle and !_isPZombie and (player distance cu
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
 	s_player_fuelauto2 = -1;
+	player removeAction s_player_packbike;
+	s_player_packbike = -1;
+	player removeAction s_player_packmotorbike;
+	s_player_packmotorbike = -1;
+	player removeAction s_player_packplane;
+	s_player_packplane = -1;
+	player removeAction s_player_upgradebike;
+	s_player_upgradebike = -1;
+	player removeAction s_player_upgrademotorbike;
+	s_player_upgrademotorbike = -1;
+	player removeAction s_clothes;
+    s_clothes = -1;
 };
 
 
@@ -848,3 +863,97 @@ if (_dogHandle > 0) then {
 	player removeAction s_player_calldog;
 	s_player_calldog = 		-1;
 };
+// --------------------------------------- Take Clothes ------------------------------
+	
+    if (_isMan and !_isAlive and !_isZombie and !_isAnimal) then {
+    if (s_clothes < 0) then {
+            s_clothes = player addAction [("<t color=""#FF0000"">" + ("Take Clothes") + "</t>"), "custom\Various_Scripts\clothes.sqf",cursorTarget, 1, false, true, "",""];
+        };
+    } else {
+        player removeAction s_clothes;
+        s_clothes = -1;
+    };
+	
+// ------------------------------------ Deploy Bike -----------------------------------
+
+	if (_hasScrap) then {
+        hasBikeItem = true;
+    } else { hasBikeItem = false;};
+    if((speed player <= 1) && hasBikeItem && _canDo) then {
+        if (s_player_deploybike < 0) then {
+            s_player_deploybike = player addaction[("<t color=""#007ab7"">" + ("Deploy Bike") +"</t>"),"custom\builds\deploybike.sqf","",5,false,true,"", ""];
+        };
+    } else {
+        player removeAction s_player_deploybike;
+        s_player_deploybike = -1;
+    };
+	
+// ------------------------------------ Pack Bike ---------------------------------------
+	
+	if(cursorTarget isKindOf "Old_bike_TK_INS_EP1" and _canDo) then {
+		if ((s_player_packbike < 0) and (player distance cursorTarget < 3)) then {
+			s_player_packbike = player addaction[("<t color=""#007ab7"">" + ("Dismantle Bike") +"</t>"),"custom\builds\packbike.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_packbike;
+		s_player_packbike = -1;
+	};
+	
+// ------------------------------------ Deploy Motorbike ----------------------------------
+
+	if (_hasScrap and _hasEngine) then {
+        hasMotorBikeItem = true;
+    } else { hasMotorBikeItem = false;};
+    if((speed player <= 1) && hasMotorBikeItem && _canDo) then {
+        if (s_player_deploymotorbike < 0) then {
+            s_player_deploymotorbike = player addaction[("<t color=""#007ab7"">" + ("Deploy Motorbike") +"</t>"),"custom\builds\deploymoto.sqf","",5,false,true,"", ""];
+        };
+    } else {
+        player removeAction s_player_deploymotorbike;
+        s_player_deploymotorbike = -1;
+    };
+	
+// ------------------------------------ Pack Motorbike -------------------------------------
+	
+	if(cursorTarget isKindOf "TT650_Ins" and _canDo) then {
+		if ((s_player_packmotorbike < 0) and (player distance cursorTarget < 3)) then {
+			s_player_packmotorbike = player addaction[("<t color=""#007ab7"">" + ("Dismantle Motorbike") +"</t>"),"custom\builds\packmoto.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_packmotorbike;
+		s_player_packmotorbike = -1;
+	};
+	
+// -------------------------------------- Upgrade Bike -----------------------------------------
+
+	if(cursorTarget isKindOf "Old_bike_TK_INS_EP1" and _hasEngine and _canDo) then {
+		if ((s_player_upgradebike < 0) and (player distance cursorTarget < 3)) then {
+			s_player_upgradebike = player addaction[("<t color=""#007ab7"">" + ("Add Engine") +"</t>"),"custom\builds\upgradebike.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_upgradebike;
+		s_player_upgradebike = -1;
+	};
+	
+// -------------------------------------- Upgrade Motorbike ---------------------------------
+
+	if(cursorTarget isKindOf "TT650_Ins" and _hasRotor and _canDo) then {
+		if ((s_player_upgrademotorbike < 0) and (player distance cursorTarget < 3)) then {
+			s_player_upgrademotorbike = player addaction[("<t color=""#007ab7"">" + ("Add Main Rotor") +"</t>"),"custom\builds\upgrademotorbike.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_upgrademotorbike;
+		s_player_upgrademotorbike = -1;
+	};
+	
+// ------------------------------------ Pack Plane -------------------------------------
+	
+	if(cursorTarget isKindOf "AN2_DZ" and _canDo) then {
+		if ((s_player_packplane < 0) and (player distance cursorTarget < 3)) then {
+			s_player_packplane = player addaction[("<t color=""#007ab7"">" + ("Dismantle Plane") +"</t>"),"custom\builds\packplane.sqf","",5,false,true,"", ""];
+		};
+	} else {
+		player removeAction s_player_packplane;
+		s_player_packplane = -1;
+	};
+	

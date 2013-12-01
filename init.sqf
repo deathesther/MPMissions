@@ -38,7 +38,7 @@ OldHeliCrash = false;
 MaxAmmoBoxes = 20;
 MaxMineVeins = 100;
 
-setViewDistance 10000;
+setViewDistance 8000;
 setTerrainGrid 12.5;
 
 dayz_paraSpawn = false;
@@ -48,7 +48,7 @@ dayz_tameDogs = true;
 DynamicVehicleDamageLow = 30; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
-EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",5,"sample_loot_event"]];
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",10,"sample_loot_event"],["any","any","any","any",20,"Military"],["any","any","any","any",25,"Treasure"],["any","any","any","any",40,"Supplyitems"],["any","any","any","any",55,"Construction"],["any","any","any","any",5,"Death_event"]];
 dayz_fullMoonNights = false;
 
 //Load in compiled functions
@@ -112,6 +112,7 @@ if (!isDedicated) then {
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	_void = [] execVM "R3F_Realism\R3F_Realism_Init.sqf";
+	_nil = [] execVM "custom\Various_Scripts\remote_messages.sqf";
 	
 	//Lights
 	//[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
@@ -119,13 +120,6 @@ if (!isDedicated) then {
 
 #include "\z\addons\dayz_code\system\REsec.sqf"
 
-///////////////////// COLOUR EFFECTS - OFF BY DEFAULT //////////////////////////////
-//[] execVM "custom\EFFECTS\clear contrast.sqf";
-[] execVM "custom\EFFECTS\wasteland.sqf";
-//[] execVM "custom\EFFECTS\summer colours.sqf";
-//[] execVM "custom\EFFECTS\photo effect.sqf";
-//[] execVM "custom\EFFECTS\warzone effect.sqf";
-//[] execVM "custom\EFFECTS\Snow Storm.sqf";
 ///////////////////// NIGHT FOG - USE WITH CAUTION HEAVY ON FPS ///////////////////// 
 [] execVM "custom\EFFECTS\ground_fog.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////

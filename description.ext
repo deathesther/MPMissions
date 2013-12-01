@@ -1,6 +1,6 @@
 #include "custom\custom_loot\Configs\CfgBuildingLoot.hpp"
-#include "custom\custom_loot\Configs\CfgLootSmall.hpp"
 #include "custom\custom_loot\Configs\cfgLoot.hpp"
+#include "custom\custom_loot\Configs\CfgLootSmall.hpp"
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission= "DayZ Epoch Chernarus";

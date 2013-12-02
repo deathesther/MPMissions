@@ -30,11 +30,11 @@ dayz_zedsAttackVehicles = false;
 DynamicVehicleFuelHigh = 75;
 dayz_sellDistance = 30;
 // Loadout config
-DefaultMagazines = ["ItemBandage","FoodbeefCooked","ItemSodaPepsi","10x_303","10x_303","10x_303"];
-DefaultWeapons = ["ItemMap","ItemFlashlight","LeeEnfield"];
+DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi","15Rnd_9x19_M9","15Rnd_9x19_M9","15Rnd_9x19_M9"];
+DefaultWeapons = ["ItemMap","ItemFlashlight","M9"];
 DefaultBackpack = "CZ_VestPouch_EP1";
 DefaultBackpackWeapon = "";
-OldHeliCrash = false;
+OldHeliCrash = true;
 MaxAmmoBoxes = 20;
 MaxMineVeins = 100;
 
@@ -133,3 +133,10 @@ if (!isDedicated) then {[] execVM "custom\Various_Scripts\kh_actions.sqf"};
 [] execVM "debug\addmarkers75.sqf";
 //////////////////////Fast Rope//////////////////////////////////////////////////////
  sleep 1; _fast_rope = [] execVM "custom\Fast_Rope\BTC_fast_roping_init.sqf";
+//////////////////////##UID Based Custom Spawn Locations##///////////////////////////
+p2_newspawn = compile preprocessFileLineNumbers "custom\Various_Scripts\newspawn.sqf";
+waitUntil {!isNil ("PVDZE_plr_LoginRecord")};
+if (dayzPlayerLogin2 select 2) then
+{
+    player spawn p2_newspawn;
+};

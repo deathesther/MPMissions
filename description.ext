@@ -180,3 +180,4 @@ class RscTitles
 {
 	#include "R3F_ARTY_AND_LOG\desc_rsct_include.h"
 };
+#include "addons\SARGE\SAR_define.hpp"

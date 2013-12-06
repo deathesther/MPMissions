@@ -34,11 +34,11 @@ DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi"
 DefaultWeapons = ["ItemMap","ItemFlashlight","M9"];
 DefaultBackpack = "CZ_VestPouch_EP1";
 DefaultBackpackWeapon = "";
-OldHeliCrash = true;
+OldHeliCrash = false;
 MaxAmmoBoxes = 20;
 MaxMineVeins = 100;
 
-setViewDistance 8000;
+setViewDistance 5000;
 setTerrainGrid 12.5;
 
 dayz_paraSpawn = false;
@@ -48,7 +48,7 @@ dayz_tameDogs = true;
 DynamicVehicleDamageLow = 30; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
-EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",10,"sample_loot_event"],["any","any","any","any",20,"Military"],["any","any","any","any",25,"Treasure"],["any","any","any","any",40,"Supplyitems"],["any","any","any","any",55,"Construction"],["any","any","any","any",5,"Death_event"]];
+EpochEvents = [["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"crash_spawner"],["any","any","any","any",30,"crash_spawner"],["any","any","any","any",45,"crash_spawner"],["any","any","any","any",5,"Death_event"],["any","any","any","any",10,"sample_loot_event"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",25,"Military"],["any","any","any","any",30,"Treasure"],["any","any","any","any",35,"Supplyitems"],["any","any","any","any",40,"Construction"]];
 dayz_fullMoonNights = false;
 
 //Load in compiled functions
@@ -95,6 +95,9 @@ BIS_Effects_startEvent = {
 };
 
 if (isServer) then {
+    Custom_Plot_Poles = [];
+    SAR_AI_VEH_EPOCH_FIX = false; // Expermential  (Original SARGE FIX, didnt run on vehicles bought at traders or spawned after server start)
+    SAR_AI_VEH_FIX = compile preprocessFileLineNumbers "addons\SARGE\SAR_vehicle_fix_epoch.sqf";
 	call compile preprocessFileLineNumbers "dynamic_vehicle.sqf";				//Compile vehicle configs
 	
 	// Add trader citys
@@ -140,3 +143,5 @@ if (dayzPlayerLogin2 select 2) then
 {
     player spawn p2_newspawn;
 };
+////////////////////// Missions + Sarge AI///////////////////////////////////////////
+execVM "addons\Missions\init.sqf";

@@ -262,6 +262,16 @@ if (!isDedicated) then {
 	};
 	
 	dayz_spaceInterrupt = {
+
+        if (_dikCode == 0x44) then {
+		if (debugMonitor) then {
+			debugMonitor = false;
+			hintSilent "";
+			} else {
+			debugMonitor = true;
+			};
+		};
+		
 		private ["_dikCode", "_handled"];
 		_dikCode = 	_this select 1;
 		

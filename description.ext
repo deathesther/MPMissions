@@ -1,6 +1,4 @@
 #include "custom\custom_loot\Configs\CfgBuildingLoot.hpp"
-#include "custom\custom_loot\Configs\cfgLoot.hpp"
-#include "custom\custom_loot\Configs\CfgLootSmall.hpp"
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission= "DayZ Epoch Chernarus";
@@ -10,7 +8,7 @@ OnLoadMissionTime = False;
 disabledAI = true;
 disableChannels[]={0,2,6};
 enableItemsDropping = 0;
-#include "R3F_Realism\R3F_Weight\R3F_CfgWeight.h"
+
 briefing = 0;
 debriefing = 0;
 
@@ -151,29 +149,6 @@ class DayZ_loadingScreen
 		};
 	};
 };
-class CfgSounds
-{
-    sounds[]={nam,eve,puk};
-    class nam
-    {
-        name = "Siren1";
-        sound[] = {custom\sound\SirenLoopMono.ogg, db+5, 1.0};
-        titles[] = {""};
-    };
-    class eve
-    {
-        name = "Siren2";
-        sound[] = {custom\sound\Sirens.ogg, db+5, 1.0};
-        titles[] = {""};
-    };
-    class puk
-    {
-        name = "Siren3";
-        sound[] = {custom\sound\Sirens2.ogg, db+5, 1.0};
-        titles[] = {""};
-    };
-};
-
 #include "R3F_ARTY_AND_LOG\desc_include.h"
 
 class RscTitles

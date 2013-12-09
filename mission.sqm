@@ -12,7 +12,7 @@ class Mission
 		"cacharacters_pmc",
 		"ca_modules_functions",
 		"glt_m300t",
-		"suv_col",
+		
 		"csj_gyroac",
 		"map_eu",
 		"jetskiyanahuiaddon"
@@ -1304,7 +1304,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="zonebash";
-			expCond="(player distance zonebash) < 40;";
+			expCond="(player distance zonebash) < 100;";
 			expActiv="TitleText[""Now entering trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
 			expDesactiv="TitleText[""Now leaving trader city Bash"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
@@ -1319,7 +1319,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="zoneklen";
-			expCond="(player distance zoneklen) < 40;";
+			expCond="(player distance zoneklen) < 100;";
 			expActiv="TitleText[""Now entering trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
 			expDesactiv="TitleText[""Now leaving trader city Klen"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects
@@ -1334,7 +1334,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="zonestary";
-			expCond="(player distance zonestary) < 40;";
+			expCond="(player distance zonestary) < 100;";
 			expActiv="TitleText[""Now entering trader city Stary"",""PLAIN DOWN""]; canbuild = true;";
 			expDesactiv="TitleText[""Now leaving trader city Stary"",""PLAIN DOWN""]; canbuild = true;";
 			class Effects

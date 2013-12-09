@@ -14,7 +14,7 @@ switch (_iClass) do
 		//Item is food, add random quantity of cans along with an item (if exists)
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 
-		_itemTypes = [] + ((getArray (missionConfigFile >> "cfgLoot" >> _iClass)) select 0);
+		_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iClass)) select 0);
 		_index = dayz_CLBase find _iClass;
 		_weights = dayz_CLChances select _index;
 		_cntWeights = count _weights;
@@ -62,16 +62,43 @@ switch (_iClass) do
 
 		_item = createVehicle [_iItem, _iPos, [], _radius, "CAN_COLLIDE"];
 	};
-	
+	case "cfglootweapon":
+	{
+		_itemTypes = [] + ((getArray (missionConfigFile >> "cfgLoot" >> _iItem)) select 0);
+		_index = dayz_CLBase find _iItem;
+		_weights = dayz_CLChances select _index;
+		_cntWeights = count _weights;
+			
+	    _index = floor(random _cntWeights);
+		_index = _weights select _index;
+		_iItem = _itemTypes select _index;
+
+		if (_iItem == "Chainsaw") then {
+			_iItem = ["ChainSaw","ChainSawB","ChainSawG","ChainSawP","ChainSawR"] call BIS_fnc_selectRandom;
+		};
+
+		//Item is a weapon, add it and a random quantity of magazines
+		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+		_item addWeaponCargoGlobal [_iItem,1];
+		_mags = [] + getArray (ConfigFile >> "cfgWeapons" >> _iItem >> "magazines");
+		if ((count _mags) > 0) then
+		{
+			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
+			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
+		};
+		
+	};
 	case "weapon":
 	{
 		//Item is a weapon, add it and a random quantity of magazines
 		_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
 		_item addWeaponCargoGlobal [_iItem,1];
-		_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
+		_mags = [] + getArray (ConfigFile >> "cfgWeapons" >> _iItem >> "magazines");
 		if ((count _mags) > 0) then
 		{
 			if (_mags select 0 == "Quiver") then { _mags set [0, "WoodenArrow"] }; // Prevent spawning a Quiver
+			if (_mags select 0 == "20Rnd_556x45_Stanag") then { _mags set [0, "30Rnd_556x45_Stanag"] };
 			_item addMagazineCargoGlobal [(_mags select 0), (round(random 2))];
 		};
 	};

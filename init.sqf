@@ -26,16 +26,18 @@ MaxHeliCrashes= 5; // Default = 5
 MaxVehicleLimit = 600; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
-dayz_paraSpawn = false;
-DynamicVehicleDamageLow = 35;
-DynamicVehicleDamageHigh = 100;
-DynamicVehicleFuelLow = 20;
-DynamicVehicleFuelHigh = 100;
 dayz_maxLocalZombies = 40; // Default = 30 
 dayz_maxGlobalZombiesInit = 40;
 dayz_maxGlobalZombiesIncrease = 10;
 dayz_maxZeds = 500;
 dayz_zedsAttackVehicles = false;
+dayz_minpos = -1; 
+dayz_maxpos = 16000;
+dayz_paraSpawn = false;
+DynamicVehicleDamageLow = 35;
+DynamicVehicleDamageHigh = 100;
+DynamicVehicleFuelLow = 20;
+DynamicVehicleFuelHigh = 100;
 dayz_sellDistance_vehicle = 10;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
@@ -45,13 +47,13 @@ DZE_DeathMsgTitleText = true;
 MaxAmmoBoxes = 50;
 MaxMineVeins = 100;
 DZE_vehicleAmmo = 1;
-DZE_BackpackGuard = true;
+DZE_BackpackGuard = false;
 DZE_HumanityTargetDistance = 25;
 dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
 DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi","15Rnd_9x19_M9","15Rnd_9x19_M9","15Rnd_9x19_M9"];
 DefaultWeapons = ["ItemMap","ItemFlashlight","M9"];
-DefaultBackpack = "CZ_VestPouch_EP1";
+DefaultBackpack = "";
 DefaultBackpackWeapon = "";
 setViewDistance 5000;
 setTerrainGrid 12.5;
@@ -75,13 +77,11 @@ progressLoadingScreen 1.0;
 
 if (isServer) then {
 	Custom_Plot_Poles = [];
-	SAR_AI_VEH_EPOCH_FIX = false; // Expermential  (Original SARGE FIX, didnt run on vehicles bought at traders or spawned after server start)
-	SAR_AI_VEH_FIX = compile preprocessFileLineNumbers "addons\SARGE\SAR_vehicle_fix_epoch.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
 	//Compile vehicle configs
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_17.Chernarus\dynamic_vehicle.sqf";				
+	
 	// Add trader citys
-	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_17.Chernarus\mission.sqf";
-
+	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
@@ -95,15 +95,26 @@ if (!isDedicated) then {
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
 	
-	
+	//anti Hack
+	//[] execVM "\z\addons\dayz_code\system\antihack.sqf";
+
 	//Lights
-	//[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	[0,0,true,true,true,58,280,600,[0.698, 0.556, 0.419],"Generator_DZ",0.1] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	
 };
+
 #include "\z\addons\dayz_code\system\REsec.sqf"
+
 //Start Dynamic Weather
 execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
+
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
+
+/////////////////////////////////////////////////////////////////////////////////////
+[] execVM "cratesbase.sqf";
+[] execVM "cratesbase2.sqf";
+[] execVM "cratesbase3.sqf";
 ///////////////////// NIGHT FOG - USE WITH CAUTION HEAVY ON FPS ///////////////////// 
 [] execVM "custom\EFFECTS\ground_fog.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
@@ -125,4 +136,4 @@ if (dayzPlayerLogin2 select 2) then
     player spawn p2_newspawn;
 };
 ////////////////////// Missions + Sarge AI///////////////////////////////////////////
-execVM "addons\Missions\init.sqf";
+execVM "custom\Missions\init.sqf";

@@ -94,6 +94,7 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
+	_nil = [] execVM "custom\Various_Scripts\remote_messages.sqf";
 	
 	//anti Hack
 	//[] execVM "\z\addons\dayz_code\system\antihack.sqf";
@@ -115,8 +116,7 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "cratesbase.sqf";
 [] execVM "cratesbase2.sqf";
 [] execVM "cratesbase3.sqf";
-///////////////////// NIGHT FOG - USE WITH CAUTION HEAVY ON FPS ///////////////////// 
-[] execVM "custom\EFFECTS\ground_fog.sqf";
+[] execVM "cratesbase4.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 /////////////////////ADMIN TOOLS/////////////////////////////////////////////////////

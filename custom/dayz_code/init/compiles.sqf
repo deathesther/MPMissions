@@ -23,7 +23,7 @@ if (!isDedicated) then {
 	building_spawnLoot =		compile preprocessFileLineNumbers "custom\custom_loot\compile\building_spawnLoot.sqf";
 	// player_taskHint =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_taskHint.sqf";
 	building_spawnZombies =		compile preprocessFileLineNumbers "custom\custom_loot\compile\building_spawnZombies.sqf";
-	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\dayz_code\actions\dayz_spaceInterrupt.sqf";
+	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\dayz_spaceInterrupt.sqf";
 	//animal_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\animal_monitor.sqf";
 	// building_monitor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\system\building_monitor.sqf";
 	player_fired =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
@@ -49,7 +49,7 @@ if (!isDedicated) then {
 	// stream_locationCheck = 		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\stream_locationCheck.sqf";
 	player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
 	player_login = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_login.sqf";			//Used to generate ambient music
-	player_death =				compile preprocessFileLineNumbers "custom\grave_cross\player_death.sqf";
+	player_death =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_death.sqf";
 	player_switchModel =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_switchModel.sqf";
 	player_checkStealth =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_checkStealth.sqf";
 	world_sunRise =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_sunRise.sqf";

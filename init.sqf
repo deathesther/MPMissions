@@ -76,7 +76,6 @@ progressLoadingScreen 1.0;
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
 if (isServer) then {
-	Custom_Plot_Poles = [];
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
 	//Compile vehicle configs
 	
@@ -115,7 +114,7 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 /////////////////////////////////////////////////////////////////////////////////////
 //[] execVM "cratesbase.sqf";
 //[] execVM "cratesbase2.sqf";
-[] execVM "cratesbase3.sqf";
+//[] execVM "cratesbase3.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 /////////////////////ADMIN TOOLS/////////////////////////////////////////////////////
@@ -134,5 +133,3 @@ if (dayzPlayerLogin2 select 2) then
 {
     player spawn p2_newspawn;
 };
-////////////////////// Missions + Sarge AI///////////////////////////////////////////
-execVM "custom\Missions\init.sqf";

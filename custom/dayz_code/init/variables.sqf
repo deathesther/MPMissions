@@ -245,6 +245,8 @@ dayz_resetSelfActions = {
 	s_player_towing		 =  -1;
 	s_halo_action =         -1;
 	s_player_SurrenderedGear = -1;
+	s_player_maintain_area = -1;
+        s_player_maintain_area_preview = -1;
 };
 call dayz_resetSelfActions;
 
@@ -523,6 +525,11 @@ if(isServer) then {
 		DZE_BackpackGuard = true;
 	};
 	
+	if(isNil "DZE_CleanNull") then {
+		DZE_CleanNull = false;
+	};
+	
+	
 	//dayz_flyMonitor = [];		//used for monitor flies
 	//DZE_FlyWorkingSet = [];
 
@@ -607,7 +614,7 @@ if(!isDedicated) then {
 	dayz_clientPreload = 	false;
 	dayz_authed = 			false;
 	dayz_panicCooldown = 	0;
-	dayz_areaAffect =		3.5;
+	dayz_areaAffect =		2.5;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
 	dayz_spawnDelay =		120;
@@ -652,6 +659,10 @@ if(!isDedicated) then {
 	if(isNil "DZE_AntiWallLimit") then {
 		DZE_AntiWallLimit = 1;
 	};
+	if(isNil "DZE_requireplot") then {
+		DZE_requireplot = 1;
+	};
+	
 	
 	DZE_AntiWallCounter = 0;
 

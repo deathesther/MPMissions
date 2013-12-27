@@ -113,10 +113,9 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
 /////////////////////////////////////////////////////////////////////////////////////
-[] execVM "cratesbase.sqf";
-[] execVM "cratesbase2.sqf";
+//[] execVM "cratesbase.sqf";
+//[] execVM "cratesbase2.sqf";
 [] execVM "cratesbase3.sqf";
-[] execVM "cratesbase4.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 /////////////////////ADMIN TOOLS/////////////////////////////////////////////////////

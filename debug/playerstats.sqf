@@ -18,7 +18,7 @@ Your admins will get the advanced version of your debug monitor,
 while your regular users will get the cut down version. 
 */
 
-if ((getPlayerUID player) in ["8917190","125495814","114032198"]) then { 	  
+if ((getPlayerUID player) in [""]) then { 	  
 	while {sleep 1;hotkey_hitme == 1} do {
 	  hintSilent parseText format ["
 	<t size='0.95' font='Bitstream' align='left' >[%18]</t><t size='0.95' font='Bitstream' align='right'>[FPS: %10]</t><br/>

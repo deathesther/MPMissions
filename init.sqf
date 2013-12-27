@@ -26,8 +26,8 @@ MaxHeliCrashes= 5; // Default = 5
 MaxVehicleLimit = 600; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
-dayz_maxLocalZombies = 40; // Default = 30 
-dayz_maxGlobalZombiesInit = 40;
+dayz_maxLocalZombies = 50; // Default = 30 
+dayz_maxGlobalZombiesInit = 50;
 dayz_maxGlobalZombiesIncrease = 10;
 dayz_maxZeds = 500;
 dayz_zedsAttackVehicles = false;
@@ -38,24 +38,24 @@ DynamicVehicleDamageLow = 35;
 DynamicVehicleDamageHigh = 100;
 DynamicVehicleFuelLow = 20;
 DynamicVehicleFuelHigh = 100;
-dayz_sellDistance_vehicle = 10;
+dayz_sellDistance_vehicle = 20;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
 DZE_DeathMsgGlobal = true;
 DZE_DeathMsgSide = true;
 DZE_DeathMsgTitleText = true;
-MaxAmmoBoxes = 50;
+MaxAmmoBoxes = 100;
 MaxMineVeins = 100;
 DZE_vehicleAmmo = 1;
 DZE_BackpackGuard = false;
-DZE_HumanityTargetDistance = 25;
+DZE_HumanityTargetDistance = 50;
 dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
 DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi","15Rnd_9x19_M9","15Rnd_9x19_M9","15Rnd_9x19_M9"];
 DefaultWeapons = ["ItemMap","ItemFlashlight","M9"];
 DefaultBackpack = "";
 DefaultBackpackWeapon = "";
-setViewDistance 5000;
+setViewDistance 4000;
 setTerrainGrid 12.5;
 
 EpochEvents = [["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"crash_spawner"],["any","any","any","any",30,"crash_spawner"],["any","any","any","any",45,"crash_spawner"],["any","any","any","any",5,"Death_event"],["any","any","any","any",10,"sample_loot_event"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",25,"Military"],["any","any","any","any",30,"Treasure"],["any","any","any","any",35,"Supplyitems"],["any","any","any","any",40,"Construction"]];

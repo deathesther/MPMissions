@@ -15,15 +15,87 @@ class Mission
 		"cacharacters_pmc",
 		"ca_modules_functions",
 		"glt_m300t",
-		
 		"csj_gyroac",
 		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"mbg_killhouses",
+		"camisc3",
+		"castructures_pmc_buildings_bunker",
+		"cabuildings2_misc_cargo",
+		"camisc_e",
+		"caweapons_ammoboxes",
+		"camp_armory_misc_laptop",
+		"cawheeled_pmc",
+		"castructures_e_misc_misc_well",
+		"CAMisc",
+		"CABuildings",
+		"warfarebuildings",
+		"castructures_e_misc_misc_market",
+		"castructures_mil",
+		"castructures_e_misc_misc_garbage",
+		"castructures_e_misc_misc_interier",
+		"ind_tank",
+		"casigns_e",
+		"ace_sys_vehicledamage",
+		"ace_sys_easa",
+		"ace_sys_playerhud",
+		"ace_main",
+		"ace_sys_wounds",
+		"shed_wooden",
+		"cacharacters_e",
+		"cba_main",
+		"camisc_e_wf",
+		"camp_armory_misc_concrete_wall",
+		"castructures_e_misc_misc_construction",
+		"cadata",
+		"camp_armory_misc_loudspeakers",
+		"ace_c_weapon",
+		"usec_rig_a",
+		"chn_urban",
+		"tks_town1",
+		"caair2_uh1y",
+		"ca_baf",
+		"caweapons_e_ammoboxes"
 	};
 	addOnsAuto[]=
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
+		"ace_sys_vehicledamage",
+		"ace_sys_easa",
+		"ace_main",
+		"cba_main",
+		"mbg_killhouses",
+		"camisc3",
+		"castructures_pmc_buildings_bunker",
+		"map_eu",
+		"cabuildings2_misc_cargo",
+		"camisc_e",
+		"caweapons_ammoboxes",
+		"camp_armory_misc_laptop",
+		"castructures_e_misc_misc_well",
+		"CAMisc",
+		"CABuildings",
+		"warfarebuildings",
+		"castructures_e_misc_misc_market",
+		"castructures_mil",
+		"castructures_e_misc_misc_garbage",
+		"castructures_e_misc_misc_interier",
+		"ind_tank",
+		"casigns_e",
+		"shed_wooden",
+		"camisc_e_wf",
+		"camp_armory_misc_concrete_wall",
+		"castructures_e_misc_misc_construction",
+		"cadata",
+		"camp_armory_misc_loudspeakers",
+		"ace_c_weapon",
+		"chn_urban",
+		"tks_town1",
+		"caair2_uh1y",
+		"ca_baf",
+		"caweapons_e_ammoboxes",
+		"usec_rig_a",
 		"chernarus"
 	};
 	randomSeed=11171215;
@@ -1169,6 +1241,98 @@ class Mission
 				};
 			};
 		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-828.53992,111.21916,4384.5957};
+					id=1222;
+					side="LOGIC";
+					vehicle="ACE_Vehicledamage_Enable_Cookoff";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-823.74518,116.39867,4505.4033};
+					id=1223;
+					side="LOGIC";
+					vehicle="ACE_EASA";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-312.94083,125.17327,4834.3657};
+					id=1224;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-449.3812,128.66728,4836.9141};
+					id=1225;
+					side="LOGIC";
+					vehicle="CBA_main_require";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={-1084.8038,246.47115,7938.3931};
+					azimut=-31.948099;
+					id=1614;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=1;
+					text="lootSpawn";
+					init="ACE_NO_RECOGNIZE = true; publicVariable ""ACE_NO_RECOGNIZE"";";
+				};
+			};
+		};
 	};
 	class Markers
 	{
@@ -1298,7 +1462,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={6325.6772,304.99033,7807.7412};
@@ -1382,6 +1546,21 @@ class Mission
 			expDesactiv="canbuild = true; inTraderCity = ""Any"";";
 			class Effects
 			{
+			};
+		
+		};
+		class Item5
+		{
+			position[]={-1029.8004,250.4453,7948.4404};
+			a=10000;
+			b=10000;
+			activationBy="ANY";
+			interruptable=1;
+			age="UNKNOWN";
+			name="soundE";
+			class Effects
+			{
+				soundDet="Engine_factory3_EP1";
 			};
 		};
 	};

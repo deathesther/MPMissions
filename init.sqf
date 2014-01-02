@@ -112,8 +112,9 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
 /////////////////////////////////////////////////////////////////////////////////////
-//[] execVM "cratesbase.sqf";
-//[] execVM "cratesbase2.sqf";
+[] execVM "cratesbase.sqf";
+[] execVM "cratesbase1.sqf";
+[] execVM "cratesbase2.sqf";
 //[] execVM "cratesbase3.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
@@ -132,4 +133,44 @@ waitUntil {!isNil ("PVDZE_plr_LoginRecord")};
 if (dayzPlayerLogin2 select 2) then
 {
     player spawn p2_newspawn;
+};
+//////////////////////////////////NEW////////////////////////////////////////////////
+/*------------------------------------------------------------------------------
+| BELOW THIS LINE IS FOR CUSOTM SCRIPTS, POLICE SCRIPT AND COMMENT ITS PURPOSE |
+------------------------------------------------------------------------------*/
+
+[] ExecVM "custom\Various_Scripts\wind.sqf"; //Handles Client Wind Deflection//Same Readings
+waitUntil {player == player};
+
+/*SET BULLET WIND CONDITIONS*/
+if (isServer) then {
+	setWind [10, 0, false, true];
+};
+
+/*----------------------
+| ACE FUNCTION DISABLE | - Disable names and weapon storing for aircraft -- MaC
+----------------------*/
+if (!isDedicated) then {
+ace_sys_eject_fnc_weaponCheckEnabled = {false};
+publicvariable 'ace_sys_eject_fnc_weaponCheckEnabled';
+};
+
+if (isServer) then {
+ace_sys_tracking_markers_enabled = {false};
+publicVariable "ace_sys_tracking_markers_enabled"
+};
+
+if (isServer) then {
+ace_sys_eject_fnc_weaponcheck = {false};
+publicVariable "ace_sys_eject_fnc_weaponcheck"
+};
+
+if (isServer) then {
+ACE_NO_RECOGNIZE = {true};
+publicVariable "ACE_NO_RECOGNIZE"
+};
+
+if (isServer) then {
+ace_sys_wind_deflection_force_drift_on = {true};
+publicVariable "ace_sys_wind_deflection_force_drift_on"
 };

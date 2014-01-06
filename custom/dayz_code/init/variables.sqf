@@ -617,10 +617,10 @@ if(!isDedicated) then {
 	dayz_areaAffect =		2.5;
 	dayz_heartBeat = 		false;
 	dayzClickTime =			0;
-	dayz_spawnDelay =		120;
-	dayz_spawnWait =		-120;
-	dayz_lootDelay =		3;
-	dayz_lootWait =			-10;
+	dayz_spawnDelay =		1;
+	dayz_spawnWait =		-1;
+	dayz_lootDelay =		1;
+	dayz_lootWait =			-1;
 	dayz_spawnZombies =		0;
 	//used to count global zeds around players
 	dayz_CurrentZombies = 0;

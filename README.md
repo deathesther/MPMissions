@@ -1,4 +1,4 @@
-My custom Missions setup for dayz epoch
+My custom Missions setup for Dayz Epoch 1.0.3.1 + Hard Corps 2.0 Weps,Sounds,Extras,ACE
 
 * admintools
 * auto refuel
@@ -15,8 +15,9 @@ My custom Missions setup for dayz epoch
 * zombiebait
 * Modded server to Run Hard Corps 2.0 weps,sounds,extras,ace
 
-Credits to each addon/script creator;
-Credits to the entire EPOCH team;
-Credits to the entire ARMA2 team;
-Credits to Dean "Rocket" Hall & the entire DayZ team;
-Credits to Open Dayz;
+Credits to each addon/script creator,
+Credits to the entire EPOCH team,
+Credits to the entire ARMA2 team,
+Credits to Dean "Rocket" Hall & the entire DayZ team,
+Credits to Open Dayz,
+Credits to Hard Corps

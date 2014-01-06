@@ -51,7 +51,7 @@ DZE_BackpackGuard = false;
 DZE_HumanityTargetDistance = 50;
 dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
-DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi","15Rnd_9x19_M9","15Rnd_9x19_M9","15Rnd_9x19_M9"];
+DefaultMagazines = ["ItemBandage","ItemBandage","FoodbeefCooked","ItemSodaPepsi","15Rnd_9x19_M9","15Rnd_9x19_M9","15Rnd_9x19_M9","PartGeneric"];
 DefaultWeapons = ["ItemMap","ItemFlashlight","M9"];
 DefaultBackpack = "";
 DefaultBackpackWeapon = "";
@@ -112,7 +112,7 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
 /////////////////////////////////////////////////////////////////////////////////////
-[] execVM "cratesbase.sqf";
+//[] execVM "cratesbase.sqf";
 /////////////////////Lift Tow////////////////////////////////////////////////////////
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
 /////////////////////ADMIN TOOLS/////////////////////////////////////////////////////

@@ -22,8 +22,9 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "shotgunsingleshot","cfglootweapon" },
 			{ "submachinegun","cfglootweapon" },
-			{ "","ACESmall" },
-			{ "clothes","single" },
+			{ "ACESmall","cfglootweapon" },
+			{ "","ACELoot" },
+			//{ "clothes","single" },
 			{ "specialclothes","single" },
 			{ "backpacks","backpack" }
 		};
@@ -33,8 +34,9 @@ class CfgBuildingLoot {
 			0.1,
 			0.1,
 			0.1,
-			0.1,
-			0.1
+			//0.1,
+			0.01,
+			0.01
 		};
 	};
 	class Crate2: Default {
@@ -43,13 +45,17 @@ class CfgBuildingLoot {
 			{ "submachinegun","cfglootweapon" },
 			{ "militaryshotguns","cfglootweapon" },
 			{ "militarybackpacks","backpack" },
+			{ "militaryclothes","single" },
 			{ "machineguns","cfglootweapon" },
-			{ "","ACESmall" }
+			{ "ACESmall","cfglootweapon" },
+			{ "","ACELoot" }
 		};
 		itemChance[] =	{
 			0.1,
 			0.1,
 			0.1,
+			0.01,
+			0.01,
 			0.1,
 			0.1,
 			0.1
@@ -62,15 +68,17 @@ class CfgBuildingLoot {
 			{ "militarybackpacks","backpack" },
 			{ "militaryclothes","single" },
 			{ "militaryammo","single" },
-			{ "","ACELarge" }
+			{ "ACELarge","cfglootweapon" },
+			{ "","ACELoot" }
 		};
 		itemChance[] =	{
 			0.1,
 			0.1,
+			0.01,
+			0.01,
 			0.1,
 			0.1,
-			0.1,
-			0.1,
+			0.1
 		};
 	};
 	class Crate4: Default {
@@ -131,20 +139,12 @@ class CfgBuildingLoot {
 	};
 	class Crate5: Default {
 		itemType[] = {
-			{ "ItemBandage","magazine" },
-			{ "ItemPainkiller","magazine" },
-			{ "ItemMorphine","magazine" },
-			{ "ItemEpinephrine","magazine" },
-			{ "ItemBloodbag","magazine" },
-			{ "ItemAntibiotic","magazine" },
+			{ "","medical" },
+			{ "","hospital" },
 			{ "","food" },
 			{ "","food" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
-			0.1,
-			0.1,
 			0.1,
 			0.1,
 			0.1,
@@ -713,7 +713,7 @@ class CfgBuildingLoot {
 			{ "submachinegun","cfglootweapon" },
 			{ "militarybackpacks","backpack" },
 			{ "","medical" },
-			{ "","ACELarge" },
+			{ "ACELarge","cfglootweapon" },
 			{ "","military" },
 			{ "ItemSandbag","magazine" },
 			{ "machineguns","cfglootweapon" }
@@ -780,7 +780,7 @@ class CfgBuildingLoot {
 			{ "PartVRotor","magazine" },
 			{ "militarybackpacks","backpack" },
 			{ "","medical" },
-			{ "","ACELarge" },
+			{ "ACELarge","cfglootweapon" },
 			{ "","military" },
 			{ "ItemEtool","weapon" },
 			{ "ItemSandbag","magazine" },
@@ -855,7 +855,7 @@ class CfgBuildingLoot {
 			{ "AmmoBoxSmall_762","object" },
 			{ "militarybackpacks","backpack" },
 			{ "","medical" },
-			{ "","ACELarge" },
+			{ "ACELarge","cfglootweapon" },
 			{ "","military" },
 			{ "machinegunammo","single" },
 			{ "militaryclothes","single" },

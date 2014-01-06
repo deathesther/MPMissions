@@ -4,18 +4,31 @@ class CfgLoot {
 	ACESmall[] = {
 		{
 			"ACE_Earplugs",
+			//"ACE_Wirecutter",
+			"Binocular",
+			"ItemCompass",
+			"ItemMap",
+			"ACE_GlassesRoundGlasses",
 			"ACE_GlassesSunglasses",
 			"ACE_GlassesBlackSun",
 			"ACE_GlassesBlueSun",
 			"ACE_GlassesRedSun",
 			"ACE_GlassesGreenSun",
-			"Binocular",
 			"ItemFlashlightRed",
 			"ItemKnife",
-			"ItemGPS",
-			"ItemMap"
+			"ItemRadio",
+			"ItemWatch"
 		},
 		{
+			0.05,
+			//0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
 			0.05,
 			0.05,
 			0.05,
@@ -27,12 +40,24 @@ class CfgLoot {
 	ACELarge[] = {
 		{
 			"ACE_Earplugs",
-			"ACE_YardAge450",
-			"ACE_Earplugs",
-			"ACE_Rangefinder_OD",
+			"ACE_ParachutePack",
+			"ACE_ParachuteRoundPack",
+			//"ACE_Wirecutter",
 			"ACE_Kestrel4500",
+			"ACE_Spottingscope",
+			"ACE_Rangefinder_OD",
+			"Binocular",
+			"NVGoggles",
+			"Laserdesignator",
+			"ItemCompass",
+			"ItemGPS",
+			"ItemMap",
+			"ItemRadio",
+			"ItemWatch",
 			"ACE_DAGR",
-			"ACE_GlassesSpectacles",
+			"ACE_MX2A",
+			"ACE_YardAge450",
+			"Binocular_Vector",
 			"ACE_GlassesRoundGlasses",
 			"ACE_GlassesSunglasses",
 			"ACE_GlassesBlackSun",
@@ -46,19 +71,19 @@ class CfgLoot {
 			"ACE_GlassesBalaklava",
 			"ACE_GlassesBalaklavaGray",
 			"ACE_GlassesBalaklavaOlive",
-			"ACE_Battery_Rangefinder",
-			"ACE_ParachutePack",
-			"ACE_ParachuteRoundPack",
-			"NVGoggles",
-			"Binocular",
 			"ItemFlashlightRed",
 			"ItemKnife",
-			"ItemGPS",
-			"ItemMap",
-			"Binocular_Vector",
+			"ItemRadio",
+			"ItemWatch",
 			"ItemEtool"
 		},
 		{
+			0.05,
+			0.05,
+			0.05,
+			//0.05,
+			0.05,
+			0.05,
 			0.05,
 			0.05,
 			0.05,
@@ -90,6 +115,64 @@ class CfgLoot {
 			0.05,
 			0.05,
 			0.05
+		}
+	};
+	ACELoot[] = {
+		{
+			"ACE_Battery_Rangefinder",
+			"ACE_Flashbang",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellGreen",
+			"SmokeShellYellow",
+			"Laserbatteries",
+			"IRStrobe",
+			"IR_Strobe_Marker",
+			//"ACE_VS17Panel_M",
+			"ACE_Knicklicht_R",
+			"ACE_Knicklicht_W",
+			"ACE_Knicklicht_G",
+			"ACE_Knicklicht_Y",
+			"ACE_Knicklicht_B",
+			"ACE_Knicklicht_IR",
+			"ACE_IRStrobe",
+			"ACE_Sandbag_Magazine",
+			"ACE_Rope_M_50",
+			"ACE_Rope_M_60",
+			"ACE_Rope_M_90",
+			"ACE_Rope_M_120",
+			"ACE_Rope_M5",
+			"SmokeShellOrange",
+			"SmokeShellPurple",
+			"SmokeShellBlue"
+		},
+		{
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			//0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
+			0.05,
 		}
 	};
 	trash[] = {
@@ -110,9 +193,9 @@ class CfgLoot {
 	};
 	civilian[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -130,9 +213,9 @@ class CfgLoot {
 			"ItemDocument"
 		},
 		{
-			0.07,
-			0.08,
-			0.09,
+			//0.07,
+			//0.08,
+			//0.09,
 			0.09,
 			0.09,
 			0.05,
@@ -152,9 +235,9 @@ class CfgLoot {
 	};
 	office2[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -173,9 +256,9 @@ class CfgLoot {
 			"ItemDocument"
 		},
 		{
-			0.07,
-			0.08,
-			0.08,
+			//0.07,
+			//0.08,
+			//0.08,
 			0.09,
 			0.09,
 			0.05,
@@ -197,9 +280,9 @@ class CfgLoot {
 	food[] = {
 		{
 			//trash
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"TrashTinCan",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -213,9 +296,9 @@ class CfgLoot {
 		},
 		{
 			//trash
-			0.09,
-			0.12,
-			0.12,
+			//0.09,
+			//0.12,
+			//0.12,
 			0.09,
 			0.11,
 			0.07,
@@ -230,8 +313,8 @@ class CfgLoot {
 	};
 	office[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"TrashJackDaniels",
@@ -261,8 +344,8 @@ class CfgLoot {
 			"ItemDocument"
 		},
 		{
-			0.06,
-			0.06,
+			//0.06,
+			//0.06,
 			0.06,
 			0.04,
 			0.04,
@@ -294,8 +377,8 @@ class CfgLoot {
 	};
 	generic[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"TrashJackDaniels",
@@ -323,8 +406,8 @@ class CfgLoot {
 			"ItemHeatPack"
 		},
 		{
-			0.06,
-			0.06,
+			//0.06,
+			//0.06,
 			0.06,
 			0.04,
 			0.04,
@@ -390,8 +473,8 @@ class CfgLoot {
 	};
 	military[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"ItemBandage",
@@ -434,8 +517,8 @@ class CfgLoot {
 			"ItemDocument"
 		},
 		{
-			0.07,
-			0.04,
+			//0.07,
+			//0.04,
 			0.01,
 			0.01,
 			0.04,
@@ -480,8 +563,8 @@ class CfgLoot {
 	};
 	militarypilot[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"ItemBandage",
@@ -524,8 +607,8 @@ class CfgLoot {
 			"ItemHotwireKit"
 		},
 		{
-			0.07,
-			0.04,
+			//0.07,
+			//0.04,
 			0.01,
 			0.01,
 			0.04,
@@ -629,9 +712,9 @@ class CfgLoot {
 
 	worker[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -647,9 +730,9 @@ class CfgLoot {
 			"ItemDocument"
 		},
 		{
-			0.09,
-			0.09,
-			0.10,
+			//0.09,
+			//0.09,
+			//0.10,
 			0.10,
 			0.10,
 			0.06,

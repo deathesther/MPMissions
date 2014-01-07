@@ -107,7 +107,9 @@ R3F_LOG_CFG_remorqueurs =
 "UAZ_AGS30_TK_EP1",
 "ACE_UAZ_SPG9_CDF",
 "ACE_Offroad_SPG9_INS",
-"ACE_UAZ_MG_RU"
+"ACE_UAZ_MG_RU",
+"rksl_foxhound_lppv",
+"rksl_foxhound_lppv_wd"
 ];
 
 /**
@@ -260,11 +262,17 @@ R3F_LOG_CFG_objets_remorquables =
 "UH1H_TK_EP1",
 "UH1H_TK_GUE_EP1",
 "ACE_AH6J_DAGR_FLIR",
-"ACE_MQ8B_hellfire",
 "ACE_HC130_N",
 "ACE_UAZ_SPG9_CDF",
 "ACE_Offroad_SPG9_INS",
-"ACE_UAZ_MG_RU"
+"ACE_UAZ_MG_RU",
+"pook_H13_medevac",
+"pook_H13_amphib",
+"pook_H13_gunship",
+"pook_H13_transport",
+"pook_H13_civ",
+"rksl_foxhound_lppv",
+"rksl_foxhound_lppv_wd"
 ];
 
 
@@ -293,7 +301,13 @@ R3F_LOG_CFG_heliporteurs =
 "CH_47F_BAF",
 "MH60S",
 "UH1H_TK_EP1",
-"UH1H_TK_GUE_EP1"
+"UH1H_TK_GUE_EP1",
+"ACE_AH6J_DAGR_FLIR",
+"pook_H13_medevac",
+"pook_H13_amphib",
+"pook_H13_gunship",
+"pook_H13_transport",
+"pook_H13_civ"
 ];
 
 /**
@@ -447,11 +461,17 @@ R3F_LOG_CFG_objets_heliportables =
 "UH1H_TK_EP1",
 "UH1H_TK_GUE_EP1",
 "ACE_AH6J_DAGR_FLIR",
-"ACE_MQ8B_hellfire",
 "ACE_HC130_N",
 "ACE_UAZ_SPG9_CDF",
 "ACE_Offroad_SPG9_INS",
-"ACE_UAZ_MG_RU"
+"ACE_UAZ_MG_RU",
+"pook_H13_medevac",
+"pook_H13_amphib",
+"pook_H13_gunship",
+"pook_H13_transport",
+"pook_H13_civ",
+"rksl_foxhound_lppv",
+"rksl_foxhound_lppv_wd"
 ];
 
 
@@ -491,7 +511,7 @@ R3F_LOG_CFG_transporteurs =
 ["ArmoredSUV_PMC", 50],
 ["ATV_CZ_EP1", 50],
 ["ATV_US_EP1", 50],
-["C130J_US_EP1", 300],
+["C130J_US_EP1",500],
 ["car_hatchback", 50],
 ["car_sedan", 50],
 ["CH_47F_EP1", 50],
@@ -630,11 +650,17 @@ R3F_LOG_CFG_transporteurs =
 ["UH1H_TK_EP1", 50],
 ["UH1H_TK_GUE_EP1", 50],
 ["ACE_AH6J_DAGR_FLIR", 50],
-["ACE_MQ8B_hellfire", 50],
-["ACE_HC130_N", 50],
+["ACE_HC130_N",500],
 ["ACE_UAZ_SPG9_CDF", 50],
 ["ACE_Offroad_SPG9_INS", 50],
-["ACE_UAZ_MG_RU", 50]
+["ACE_UAZ_MG_RU", 50],
+["pook_H13_medevac", 50],
+["pook_H13_amphib", 50],
+["pook_H13_gunship", 50],
+["pook_H13_transport", 50],
+["pook_H13_civ", 50],
+["rksl_foxhound_lppv", 50],
+["rksl_foxhound_lppv_wd", 50]
 ];
 
 /**

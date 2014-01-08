@@ -1909,7 +1909,7 @@ class CfgBuildingLoot {
 			{ "SCAR_H_LNG_Sniper_SD","weapon" },
 			{"2000Rnd_762x51_M134","magazine"},
 			{"KSVK","weapon" },
-			{"m240_scoped_EP1E","weapon" }
+			{"m240_scoped_EP1","weapon" }
 		};
 		itemChance[] =	{
 			0.03,

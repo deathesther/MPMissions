@@ -58,7 +58,7 @@ DefaultBackpackWeapon = "";
 setViewDistance 4000;
 setTerrainGrid 12.5;
 
-EpochEvents = [["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"crash_spawner"],["any","any","any","any",30,"crash_spawner"],["any","any","any","any",45,"crash_spawner"],["any","any","any","any",10,"supply_drop"],["any","any","any","any",20,"Military"],["any","any","any","any",30,"Treasure"],["any","any","any","any",40,"Supplyitems"],["any","any","any","any",50,"Construction"]];
+EpochEvents = [["any","any","any","any",0,"crash_spawner"],["any","any","any","any",30,"crash_spawner"],["any","any","any","any",10,"supply_drop"]];
 dayz_fullMoonNights = false;
 
 //Load in compiled functions

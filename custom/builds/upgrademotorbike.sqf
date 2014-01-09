@@ -14,9 +14,10 @@ _sfx = "repair";
 
 sleep 5;
 
-_object = "AN2_DZ" createVehicle (position player);
+_object = "CSJ_GyroC" createVehicle (position player);
 _object setVariable ["ObjectID", "1", true];
 _object setVariable ["ObjectUID", "1", true];
+_object setVariable ["Mission",1,true];
 _object setFuel 1;
 
 cutText [format["You have upgraded your bike to plane"], "PLAIN DOWN"];

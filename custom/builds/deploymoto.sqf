@@ -15,6 +15,7 @@ sleep 5;
 _object = "TT650_Ins" createVehicle (position player);
 _object setVariable ["ObjectID", "1", true];
 _object setVariable ["ObjectUID", "1", true];
+_object setVariable ["Mission",1,true];
 _object setFuel 1;
 
 cutText [format["You have used your scrap metal & engine to build a motorbike!"], "PLAIN DOWN"];

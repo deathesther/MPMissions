@@ -189,6 +189,44 @@ class CfgBuildingLoot {
 			0.1
 		};
 	};
+	class BASELOOT1: Default {
+		itemType[] = {
+			{ "pistols","cfglootweapon" },
+			{ "shotgunsingleshot","cfglootweapon" },
+			{ "submachinegun","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT2: Default {
+		itemType[] = {
+			{ "pistols","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "militaryshotguns","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT2: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
 	class Residential: Default {
 		zombieChance = 0.3;
 		maxRoaming = 2;

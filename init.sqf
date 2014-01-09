@@ -82,6 +82,8 @@ if (isServer) then {
 	
 	// Add trader citys
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
+	// new buildings
+	_nil = [] execVM "\z\addons\dayz_server\custom\epochbalota.sqf";
 	_serverMonitor = 	[] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
@@ -123,6 +125,7 @@ if (!isDedicated) then {[] execVM "custom\Various_Scripts\kh_actions.sqf"};
 //////////////////Mission markers////////////////////////////////////////////////////
 [] execVM "debug\addmarkers.sqf";
 [] execVM "debug\addmarkers75.sqf";
+[] execVM "debug\basemarkers.sqf";
 //////////////////////Fast Rope//////////////////////////////////////////////////////
  sleep 1; _fast_rope = [] execVM "custom\Fast_Rope\BTC_fast_roping_init.sqf";
 //////////////////////##UID Based Custom Spawn Locations##///////////////////////////

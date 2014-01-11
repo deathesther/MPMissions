@@ -215,7 +215,67 @@ class CfgBuildingLoot {
 			0.1
 		};
 	};
-	class BASELOOT2: Default {
+	class BASELOOT3: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT5: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT6: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT7: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT8: Default {
+		itemType[] = {
+			{ "sniperrifles","cfglootweapon" },
+			{ "machineguns","cfglootweapon" },
+			{ "assaultrifles","cfglootweapon" }
+		};
+		itemChance[] =	{
+			0.1,
+			0.1,
+			0.1
+		};
+	};
+	class BASELOOT9: Default {
 		itemType[] = {
 			{ "sniperrifles","cfglootweapon" },
 			{ "machineguns","cfglootweapon" },

@@ -203,14 +203,10 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT2: Default {
 		itemType[] = {
-			{ "pistols","cfglootweapon" },
 			{ "assaultrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
 			{ "militaryshotguns","cfglootweapon" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
 			0.1,
 			0.1
 		};
@@ -218,72 +214,56 @@ class CfgBuildingLoot {
 	class BASELOOT3: Default {
 		itemType[] = {
 			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
+			{ "machineguns","cfglootweapon" }
 		};
 		itemChance[] =	{
 			0.1,
+			0.1
+		};
+	};
+	class BASELOOT4: Default {
+		itemType[] = {
+			{ "","submachinegunammo" },
+			{ "","pistolammo" }
+		};
+		itemChance[] =	{
 			0.1,
 			0.1
 		};
 	};
 	class BASELOOT5: Default {
 		itemType[] = {
-			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
+			{ "","assaultrifleammo" },
+			{ "","militaryshotgunammo" }
 		};
 		itemChance[] =	{
-			0.1,
 			0.1,
 			0.1
 		};
 	};
 	class BASELOOT6: Default {
 		itemType[] = {
-			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
+			{ "","machinegunammo" },
+			{ "","sniperriflesammo" }
 		};
 		itemChance[] =	{
-			0.1,
 			0.1,
 			0.1
 		};
 	};
 	class BASELOOT7: Default {
 		itemType[] = {
-			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
+			{ "","Ordnanceammo" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
 			0.1
 		};
 	};
 	class BASELOOT8: Default {
 		itemType[] = {
-			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
+			{ "","Ordnanceammo" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
-			0.1
-		};
-	};
-	class BASELOOT9: Default {
-		itemType[] = {
-			{ "sniperrifles","cfglootweapon" },
-			{ "machineguns","cfglootweapon" },
-			{ "assaultrifles","cfglootweapon" }
-		};
-		itemChance[] =	{
-			0.1,
-			0.1,
 			0.1
 		};
 	};
@@ -300,7 +280,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
-			{ "ItemMatchboxE","generic" },
+			{ "ItemMatchbox_DZE","generic" },
 			{ "","generic" },
 			{ "backpacks","backpack" },
 			{ "tents","single" },
@@ -343,7 +323,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","weapon" },
 			{ "ItemKnife","weapon" },
-			{ "ItemMatchboxE","weapon" },
+			{ "ItemMatchbox_DZE","weapon" },
 			{ "","generic" },
 			{ "","military" },
 			{ "Binocular","weapon" },
@@ -381,7 +361,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
-			{ "ItemMatchboxE","generic" },
+			{ "ItemMatchbox_DZE","generic" },
 			{ "","generic" },
 			{ "shotgunsingleshot","cfglootweapon" },
 			{ "backpacks","backpack" },
@@ -426,7 +406,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","weapon" },
 			{ "ItemKnife","weapon" },
-			{ "ItemMatchboxE","weapon" },
+			{ "ItemMatchbox_DZE","weapon" },
 			{ "","generic" },			
 			{ "","military" },
 			{ "Binocular","weapon" },
@@ -471,7 +451,7 @@ class CfgBuildingLoot {
 			{ "PartGlass","magazine" },
 			{ "PartVRotor","magazine" },
 			{ "ItemJerrycan","magazine" },
-			{ "WeaponHolder_ItemHatchetE","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -534,7 +514,7 @@ class CfgBuildingLoot {
 			{ "PartGlass","magazine" },
 			{ "PartVRotor","magazine" },
 			{ "ItemJerrycan","magazine" },
-			{ "WeaponHolder_ItemHatchetE","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemKnife","military" },
 			{ "ItemToolbox","weapon" },
 			{ "ItemWire","magazine" },
@@ -586,7 +566,7 @@ class CfgBuildingLoot {
 			{ "","generic" },
 			{ "farmweapons","cfglootweapon" },
 			{ "PartPlankPack","magazine" },
-			{ "WeaponHolder_ItemHatchetE","object" },
+			{ "WeaponHolder_ItemHatchet_DZE","object" },
 			{ "ItemFuelBarrelEmpty","magazine"},
 			{ "WeaponHolder_ItemMachete", "object"},
 			{ "ItemFishingPole","weapon" },
@@ -635,7 +615,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
-			{ "ItemMatchboxE","generic" },
+			{ "ItemMatchbox_DZE","generic" },
 			{ "","generic" },
 			{ "shotgunsingleshot","cfglootweapon" },
 			{ "backpacks","backpack" },
@@ -686,7 +666,7 @@ class CfgBuildingLoot {
 			{ "pistols","cfglootweapon" },
 			{ "ItemFlashlight","weapon" },
 			{ "ItemKnife","weapon" },
-			{ "ItemMatchboxE","weapon" },
+			{ "ItemMatchbox_DZE","weapon" },
 			{ "","generic" },
 			{ "","food" },
 			{ "Binocular","weapon" },
@@ -844,16 +824,16 @@ class CfgBuildingLoot {
 		};
 		itemChanceSmall[] =	{
 			0.15,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.35,
-			0.25,
-			0.1,
-			0.1
+			0.02,
+			0.03,
+			0.04,
+			0.02,
+			0.02,
+			0.09,
+			0.34,
+			0.26,
+			0.02,
+			0.01
 		};
 	};
 	class MilitaryIndustrial: Default {
@@ -887,28 +867,28 @@ class CfgBuildingLoot {
 			{ "machineguns","cfglootweapon" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1
+			0.02,
+			0.05,
+			0.03,
+			0.01,
+			0.05,
+			0.01,
+			0.05,
+			0.02,
+			0.01,
+			0.03,
+			0.04,
+			0.01,
+			0.01,
+			0.03,
+			0.05,
+			0.35,
+			0.07,
+			0.03,
+			0.02,
+			0.03,
+			0.01,
+			0.01
 		};
 		itemTypeSmall[] = {
 			{ "pistols","cfglootweapon" },
@@ -923,16 +903,16 @@ class CfgBuildingLoot {
 			{ "ItemEtool","weapon" }
 		};
 		itemChanceSmall[] =	{
-			0.15,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.35,
-			0.25,
-			0.1
+			0.12,
+			0.05,
+			0.03,
+			0.04,
+			0.02,
+			0.02,
+			0.09,
+			0.34,
+			0.26,
+			0.03
 		};
 	};
 	class MilitarySpecial: Default {
@@ -999,26 +979,26 @@ class CfgBuildingLoot {
 			{ "machinegunammo","single" }
 		};
 		itemChanceSmall[] =	{
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.15,
+			0.08,
+			0.02,
+			0.02,
+			0.02,
+			0.01,
+			0.03,
+			0.04,
+			0.03,
+			0.03,
+			0.06,
+			0.13,
 			0.3,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1
+			0.05,
+			0.03,
+			0.03,
+			0.02,
+			0.03,
+			0.03,
+			0.02,
+			0.02
 		};
 	};
 	class Hunting: Default {
@@ -1032,35 +1012,35 @@ class CfgBuildingLoot {
 			{"ItemMap","weapon"},
 			{"ItemFlashlight","generic"},
 			{"ItemKnife","generic"},
-			{"ItemMatchboxE","generic"},
+			{"ItemMatchbox_DZE","generic"},
 			{"farmweapons","cfglootweapon"},
 			{"","military"},
 			{"WeaponHolder_ItemMachete", "object"},
 			{"","hunter"}
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
-			0.1,
-			0.1,
-			0.1,
+			0.02,
+			0.01,
+			0.01,
+			0.03,
+			0.03,
 			0.38,
-			0.1,
+			0.02,
 			0.5
 		};
 		itemTypeSmall[] =	{
 			{"ItemMap","weapon"},
 			{"ItemFlashlight","weapon"},
 			{"ItemKnife","weapon"},
-			{"ItemMatchboxE","weapon"},
+			{"ItemMatchbox_DZE","weapon"},
 			{"","military"},
 			{"","hunter"}
 		};
 		itemChanceSmall[] =	{
-			0.1,
-			0.1,
-			0.1,
-			0.1,
+			0.02,
+			0.02,
+			0.02,
+			0.04,
 			0.4,
 			0.5
 		};
@@ -1435,7 +1415,7 @@ class CfgBuildingLoot {
 	}; // Qty: 1
 	class MASH_EP1: MASH{};
 		
-	class UH1Wreck: Military {
+	class UH1Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 		zombieChance = 0.3;
 		lootChance = 1;
@@ -1444,7 +1424,7 @@ class CfgBuildingLoot {
 		lootPos[] = {};
 	};
 
-	class UH60Wreck: Military {
+	class UH60Wreck_DZ: Military {
 		zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 		zombieChance = 0.3;
 		lootChance = 1;
@@ -1581,7 +1561,7 @@ class CfgBuildingLoot {
 	};
 
 	// DAYZ AMP More buildings
-	class Mass_grave: HouseRoaming {	
+	class Mass_grave_DZ: HouseRoaming {	
 		zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_doctor","z_soldier_pilot","z_soldier_heavy"};
 		minRoaming = 8;
 		maxRoaming = 16;
@@ -1827,7 +1807,7 @@ class CfgBuildingLoot {
 			{ "Colt1911","weapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
-			{ "ItemMatchboxE","generic" },
+			{ "ItemMatchbox_DZE","generic" },
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
@@ -1877,7 +1857,7 @@ class CfgBuildingLoot {
 			{ "Colt1911","weapon" },
 			{ "ItemFlashlight","generic" },
 			{ "ItemKnife","generic" },
-			{ "ItemMatchboxE","generic" },
+			{ "ItemMatchbox_DZE","generic" },
 			{ "ItemToolbox","weapon" },
 			{ "","generic" },
 			{ "","food" },
@@ -2380,6 +2360,8 @@ class CfgBuildingLoot {
 			{ 1.67627,3,-4.62603 },
 			{ -1.47363,4.92285,-1.28517 },
 			{ 6.43848,1.93555,2.08801 }};
+		lootPosZombie[] = {{-1.77148,2.59961,-0.410172},{4.46387,1.85254,-3.75103}};
+		lootPosSmall[] = {{7.02344,5.71191,2.08801},{0.856445,-1.72266,-1.28517},{-2.51758,1.2002,-1.28517},{5.18945,2.93848,-4.62604}};
 	};
 	class Land_budova4_in: Military
 	{
@@ -2614,7 +2596,22 @@ class CfgBuildingLoot {
 	};
 	
 	class Land_dum_olez_istan2: HouseRoaming{};
-	class Land_dum_olez_istan2_maly2: HouseRoaming{};
+	class Land_dum_olez_istan2_maly2: HouseRoaming{
+		lootPosZombie[] = {{-2.71582,-4.86133,-1.62356},{-2.76074,4.94531,-1.62356}};
+	};
+	class land_smd_dum02: HouseRoaming{
+		lootPosZombie[] = {{4.37305,1.68701,-2.7265},{-4.50977,1.54443,-3.41202}};
+	};
+	class land_dum_mesto: HouseRoaming{
+		lootPosZombie[] = {{-5.11328,-6.34717,-3.93972}};
+	};
+	class land_deutshe: HouseRoaming{
+		lootPosZombie[] = {{1.72949,4.62207,-3.0957},{1.69336,-4.75,-3.78851}};
+	};
+	class land_stanice: HouseRoaming{
+		lootPosZombie[] = {{-1.18945,4.63867,-1.83241}};
+	};
+	
 	class land_dum_mesto3_istan: HouseRoaming{};
 	class land_dum_istan2_03a: HouseRoaming{};
 	class land_ind_pec_03a: HouseRoaming{
@@ -3242,4 +3239,78 @@ class CfgBuildingLoot {
 		lootPos[] = {{-0.0117188,0.0441895,-1.81473},{-1.76758,2.24805,-1.8147},{-2.88965,-1.64795,-1.8147},{1.84277,-2.07983,-1.81471},{1.58691,-1.3374,-5.27588},{1.22852,2.57324,-5.27588}};
 	};
 
+	// SMD Sara a2
+	class land_sara_hasic_zbroj: Industrial {
+		lootPos[] = {{5.92285,1.35645,-2.66287},{0.00878906,-1.37549,-2.66287},{-1.82715,1.93066,-2.66287}};
+		lootPosZombie[] = {{3.08594,-1.72363,-1.77787},{6.19629,-0.181641,-1.77787}};
+		lootPosSmall[] = {{6.81348,-2.16846,-2.66287},{-3.30176,-2.49121,-2.67287}};
+	};
+	class land_smd_hlaska: Military {
+		lootPos[] = {{-0.724609,0.822266,3.77092}};
+		lootPosZombie[] = {{-0.18457,-3.13574,-2.25991}};
+		lootPosSmall[] = {{1.06201,-0.864258,3.77092},{-1.04688,-0.759766,3.77092}};
+	};
+	class land_smd_cihlovej_dum_mini: Residential {
+		lootPos[] = {{0.623047,2.39746,-2.58942},{0.0996094,0.995117,-2.86942},{-4.05957,-1.01953,-2.86942},{-8.86328,2.89453,-2.86942}};
+		lootPosZombie[] = {{1.81738,0.794922,-1.99442},{-1.7959,1.10742,-1.99442},{-6.54102,1.04688,-1.99442}};
+		lootPosSmall[] = {{2.89453,-1.72852,-1.91942},{2.92773,-2.3418,-2.86942},{-6.09668,3.10938,-2.86942},{-2.19629,2.9375,-2.86942}};
+	};
+	class land_smd_dum_istan4: Residential {
+		lootPos[] = {{2.60742,-2.42188,-4.35237}};
+		lootPosZombie[] = {{0.323242,5.66113,-6.38088}};
+		lootPosSmall[] = {};
+	};
+	class land_smd_dum_olez_istan2_open2: Residential {
+		lootPos[] = {{-0.162109,4.91846,-0.431501},{3.25391,2.52246,-0.421501},{-3.51953,-3.80176,0.128499},{-1.56934,0.389648,-0.411501}};
+		lootPosZombie[] = {{5.4502,-3.21729,0.207455}};
+		lootPosSmall[] = {{-6.44629,0.00488281,0.198499},{-4.30762,5.7207,0.568499},{0.628906,4.8291,0.338499},{-3.94824,-3.03906,0.128499},{1.19629,-5.44629,-0.0115013}};
+	};
+	class land_smd_dum_olez_istan2_open: Residential {
+		lootPos[] = {{0.0185547,4.61133,0.0584984},{0.412598,-4.66211,0.338498},{-5.71582,5.63477,-0.431501},{-4.5127,-4.87695,-0.431501}};
+		lootPosZombie[] = {{4.92383,-3.12109,0.0317497}};
+		lootPosSmall[] = {{-1.46338,6.05078,0.718499},{-4.68652,-3.71973,0.528499},{-0.162109,-4.69238,0.0184984},{-6.41113,5.08398,0.798498}};
+	};
+	class land_smd_dum_olez_istan1_open: Residential {
+		lootPos[] = {{-5.4375,-4.38379,1.35497},{5.75781,-3.31934,1.35497},{1.53516,-2.0625,1.35497},{-2.14941,-4.56445,-1.85398},{-6.79688,2.14453,-1.84398},{3.61523,-0.371094,-1.824}};
+		lootPosZombie[] = {{1.33691,-5.02441,-1.5178},{-4.22168,4.75391,-1.66303}};
+		lootPosSmall[] = {{-6.11914,-4.14453,2.16497},{2.4707,3.67773,1.96497},{6.42773,-0.5,1.34497},{7.48047,2.37109,-1.434},{-1.98047,-4.16504,-1.07398},{-7.60254,-4.06348,-0.883982},{-7.74902,2.51074,-1.16398},{5.85352,2.37695,-1.854}};
+	};
+	class land_smd_dum_istan3_hromada: Residential {
+		lootPos[] = {{0.293945,-1.60156,-3.328},{-1.91406,-1.65332,-3.328}};
+		lootPosZombie[] = {{-0.154297,5.01172,-2.46689},{-9.95117,1.99902,-2.46689},{10.2998,1.82227,-2.68886}};
+		lootPosSmall[] = {{0.551758,-4.12695,-3.328},{0.626953,-0.547852,-3.328}};
+	};
+	class land_smd_army_hut2: Military {
+		lootPos[] = {{0.447266,-4.6543,-1.33328}};
+		lootPosZombie[] = {{0.552734,6.06836,-0.515976},{-3.86816,-5.6875,-1.13228}};
+		lootPosSmall[] = {{-0.257813,-5.02539,-0.623276},{3.02832,-6.1582,-1.33328}};
+	};
+	class land_smd_ss_hangard_withdoor: MilitaryIndustrial {
+		lootPos[] = {{0.236328,3.4209,-5.87254},{-14.0732,22.499,-5.87254},{13.1895,22.2031,-5.87254},{-13.8877,-10.5459,-5.87254},{2.10742,-19.8496,-5.87254}};
+		lootPosZombie[] = {{0.128906,-25.0273,-5.42465},{-16.7891,1.98145,-5.42465},{0.0742188,26.5654,-5.42465},{16.6631,-7.1084,-5.42465}};
+		lootPosSmall[] = {{14.3984,12.2852,-5.87254},{0.289063,-0.197266,-5.87254},{-14.8389,-20.6475,-5.87254},{14.8574,-20.5088,-5.87254}};
+	};
+	class land_budova5: Military {
+		lootPos[] = {{-2.04004,2.89844,-1.98059}};
+		lootPosZombie[] = {{-3.04492,2.0332,-1.40211}};
+		lootPosSmall[] = {{-1.96191,-0.314453,-1.98059}};
+	};
+	class land_smd_army_hut2_int: Military {
+		lootPos[] = {{-0.848633,-1.24316,-0.948334},{-1.92383,-0.00390625,-0.948334},{2.7959,-0.0146484,-0.948334}};
+		lootPosZombie[] = {{-3.35352,-2.65332,-0.407364},{0.475586,3.37402,-0.350555}};
+		lootPosSmall[] = {{0.15918,-1.26465,-0.498337},{3.0791,1.96387,-0.948334}};
+	};
+	class land_smd_strazni_vez: Military {
+		lootPos[] = {{-1.68066,-1.30273,2.00299}};
+		lootPosZombie[] = {{-1.14844,0.125977,2.28799},{1.04102,2.45898,-1.76974}};
+		lootPosSmall[] = {{-0.902344,-1.29395,1.41299},{-1.92578,1.28613,1.41299}};
+	};
+	class land_smd_army_hut3_long_int: Military {
+		lootPos[] = {{0.643555,5.24219,-0.0739136},{-2.78809,3.13672,-1.27391},{-2.80957,5.27441,-0.863907},{-3.13086,-3.3584,-1.27391},{-0.875977,-0.6875,-1.27391}};
+		lootPosZombie[] = {{3.37598,0.145508,-0.938461},{-4.52734,0.833984,-1.2229}};
+		lootPosSmall[] = {{1.6875,5.27539,-0.863907},{-0.604492,-3.36816,-0.563904},{1.91699,1.27832,-1.27391}};
+	};
+	class land_smd_dum_mesto3_istan: HouseRoaming {
+		lootPosZombie[] = {{5.8457,-0.0634766,-2.34898},{-6.13281,0.0458984,-2.34898}};
+	};
 };

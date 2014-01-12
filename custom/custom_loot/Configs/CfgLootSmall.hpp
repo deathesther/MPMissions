@@ -17,9 +17,9 @@ class CfgLootSmall {
 	};
 	civilian[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -36,9 +36,9 @@ class CfgLootSmall {
 			"8Rnd_9x18_MakarovSD"
 		},
 		{
-			0.07,
-			0.09,
-			0.09,
+			//0.07,
+			//0.09,
+			//0.09,
 			0.1,
 			0.09,
 			0.05,
@@ -57,9 +57,9 @@ class CfgLootSmall {
 	};
 	office2[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -76,9 +76,9 @@ class CfgLootSmall {
 			"8Rnd_9x18_MakarovSD"
 		},
 		{
-			0.07,
-			0.09,
-			0.09,
+			//0.07,
+			//0.09,
+			//0.09,
 			0.09,
 			0.09,
 			0.05,
@@ -98,9 +98,9 @@ class CfgLootSmall {
 	food[] = {
 		{
 			//trash
-			"TrashTinCan",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"TrashTinCan",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -114,9 +114,9 @@ class CfgLootSmall {
 		},
 		{
 			//trash
-			0.09,
-			0.12,
-			0.12,
+		//	0.09,
+		//	0.12,
+		//	0.12,
 			0.09,
 			0.11,
 			0.07,
@@ -131,11 +131,11 @@ class CfgLootSmall {
 	};
 	office[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+		//	"FoodCanUnlabeled",
+		//	"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
-			"TrashJackDaniels",
+		//	"TrashJackDaniels",
 			"FoodCanBakedBeans",
 			"FoodCanSardines",
 			"FoodCanFrankBeans",
@@ -160,11 +160,11 @@ class CfgLootSmall {
 			"ItemHeatPack"
 		},
 		{
-			0.06,
-			0.06,
+			//0.06,
+			//0.06,
 			0.06,
 			0.04,
-			0.04,
+			//0.04,
 			0.01,
 			0.01,
 			0.01,
@@ -191,11 +191,11 @@ class CfgLootSmall {
 	};
 	generic[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
-			"TrashJackDaniels",
+			//"TrashJackDaniels",
 			"FoodCanBakedBeans",
 			"FoodCanSardines",
 			"FoodCanFrankBeans",
@@ -220,11 +220,11 @@ class CfgLootSmall {
 			"ItemHeatPack"
 		},
 		{
-			0.06,
-			0.06,
+			//0.06,
+			//0.06,
 			0.06,
 			0.04,
-			0.04,
+			//0.04,
 			0.01,
 			0.01,
 			0.01,
@@ -287,8 +287,8 @@ class CfgLootSmall {
 	};
 	military[] = {
 		{
-			"FoodCanUnlabeled",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"ItemBandage",
@@ -329,8 +329,8 @@ class CfgLootSmall {
 			"30Rnd_9x19_UZI_SD"
 		},
 		{
-			0.09,
-			0.04,
+			//0.09,
+			//0.04,
 			0.01,
 			0.01,
 			0.04,
@@ -408,9 +408,9 @@ class CfgLootSmall {
 
 	worker[] = {
 		{
-			"FoodCanUnlabeled",
-			"TrashJackDaniels",
-			"ItemSodaEmpty",
+			//"FoodCanUnlabeled",
+			//"TrashJackDaniels",
+			//"ItemSodaEmpty",
 			"ItemSodaCoke",
 			"ItemSodaPepsi",
 			"FoodCanBakedBeans",
@@ -423,9 +423,9 @@ class CfgLootSmall {
 			"ItemSledgeHead"
 		},
 		{
-			0.09,
-			0.10,
-			0.10,
+			//0.09,
+			//0.10,
+			//0.10,
 			0.11,
 			0.10,
 			0.06,

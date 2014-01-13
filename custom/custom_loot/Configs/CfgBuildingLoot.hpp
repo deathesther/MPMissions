@@ -23,7 +23,7 @@ class CfgBuildingLoot {
 			{ "shotgunsingleshot","cfglootweapon" },
 			{ "submachinegun","cfglootweapon" },
 			{ "ACESmall","cfglootweapon" },
-			{ "","ACELoot" },
+			{ "ACELoot","single" },
 			//{ "clothes","single" },
 			{ "specialclothes","single" },
 			{ "backpacks","backpack" }
@@ -48,7 +48,7 @@ class CfgBuildingLoot {
 			{ "militaryclothes","single" },
 			{ "machineguns","cfglootweapon" },
 			{ "ACESmall","cfglootweapon" },
-			{ "","ACELoot" }
+			{ "ACELoot","single" }
 		};
 		itemChance[] =	{
 			0.1,
@@ -69,7 +69,7 @@ class CfgBuildingLoot {
 			{ "militaryclothes","single" },
 			{ "militaryammo","single" },
 			{ "ACELarge","cfglootweapon" },
-			{ "","ACELoot" }
+			{ "ACELoot","single"}
 		};
 		itemChance[] =	{
 			0.1,
@@ -139,14 +139,10 @@ class CfgBuildingLoot {
 	};
 	class Crate5: Default {
 		itemType[] = {
-			{ "","medical" },
-			{ "","hospital" },
-			{ "","food" },
-			{ "","food" }
+			{ "medical","single" },
+			{ "food","single" }
 		};
 		itemChance[] =	{
-			0.1,
-			0.1,
 			0.1,
 			0.1
 		};
@@ -223,8 +219,8 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT4: Default {
 		itemType[] = {
-			{ "","submachinegunammo" },
-			{ "","pistolammo" }
+			{ "submachinegunammo","single" },
+			{ "pistolammo","single" }
 		};
 		itemChance[] =	{
 			0.1,
@@ -233,8 +229,8 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT5: Default {
 		itemType[] = {
-			{ "","assaultrifleammo" },
-			{ "","militaryshotgunammo" }
+			{ "assaultrifleammo","single" },
+			{ "militaryshotgunammo","single" }
 		};
 		itemChance[] =	{
 			0.1,
@@ -243,8 +239,8 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT6: Default {
 		itemType[] = {
-			{ "","machinegunammo" },
-			{ "","sniperriflesammo" }
+			{ "machinegunammo","single" },
+			{ "sniperriflesammo","single" }
 		};
 		itemChance[] =	{
 			0.1,
@@ -253,7 +249,7 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT7: Default {
 		itemType[] = {
-			{ "","Ordnanceammo" }
+			{ "Ordnanceammo","single" }
 		};
 		itemChance[] =	{
 			0.1
@@ -261,7 +257,7 @@ class CfgBuildingLoot {
 	};
 	class BASELOOT8: Default {
 		itemType[] = {
-			{ "","Ordnanceammo" }
+			{ "Ordnanceammo","single" }
 		};
 		itemChance[] =	{
 			0.1
@@ -291,7 +287,7 @@ class CfgBuildingLoot {
 			{ "specialclothes","single" },
 			{ "WeaponHolder_MeleeCrowbar","object" },
 			{ "shotgunsingleshot","cfglootweapon" },
-			{"ACE_Earplugs","weapon"}
+			{ "ACE_Earplugs","weapon" }
 		};
 		itemChance[] =	{
 			0.1,
